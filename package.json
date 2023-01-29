@@ -1,0 +1,30 @@
+{
+  "name": "img-preload",
+  "version": "1.0.0",
+  "description": "Simple, fast and lightweight html-img preloader",
+  "main": "index.js",
+  "scripts": {
+
+    "build:iife": "rollup --config config/iife.config.js",
+    "build:cjs": "rollup --config config/cjs.config.js",
+    "build:umb": "rollup --config config/umb.config.js",
+
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Lojze/img-preload.git"
+  },
+  "keywords": [
+    "img-preload"
+  ],
+  "author": "Lojze",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Lojze/img-preload/issues"
+  },
+  "homepage": "https://github.com/Lojze/img-preload#readme",
+  "devDependencies": {
+    "rollup": "^3.12.0"
+  }
+}

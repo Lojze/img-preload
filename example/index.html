@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>111</div>
+    <img src="https://file.40017.cn/guide/hanzhong/futip.gif" alt="">
+    <!-- <script type="module">
+        import {clone} from '../src/index.js';
+        console.log(clone(1))
+        console.log(clone(2))
+    </script> -->
+    
+    <script src="../dist/index.js"></script>
+    <script>
+        console.log(this.MyBundle.clone(1))
+        console.log(this.MyBundle.clone(2))
+        let loader = new this.MyBundle.ImgPreloader()
+        loader.fallbackImage = "https://file.40017.cn/guide/mini_qyt/hsm/default-list.jpg"
+        console.log(loader)
+        // loader.preload("http://fake1/","http://fake2/").then(res => {
+        //     console.log(res,"111")
+        // }).catch(error => {
+        //     console.log(error)
+        // })
+        loader.preload("https://file.40017.cn/guide/hanzhong/futip.gif","https://file.40017.cn/guide/hanzhong/choutip.gif","https://file.40017.cn/guide/hanzhong/jiantou.gif").then(res => {
+            console.log(res,"111")
+        })
+    </script>
+</body>
+</html>
